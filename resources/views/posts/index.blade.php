@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <title>Laravelチュートリアル</title>
+    <title>Conan</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body class="p-3">
-    <h1>ブログ一覧</h1>
+    <h1>ギャグ一覧</h1>
     <p><a href="/create" class="btn btn-primary">新規追加</a></p>
 
     @foreach ($posts as $post)
@@ -15,7 +15,7 @@
       <div class="card-body">
         <h4 class="card-title">{{ $post->title }}</h4>
         <h6 class="card-subtitle mb-2 text-muted">{{ $post->updated_at }}</h6>
-        <p class="card-text">{{ $post->body }}</p>
+        <img src="{{ $post->body }}">
         <a href="/edit/{{ $post->id }}" class="card-link">修正</a>
         <a href="/delete/{{ $post->id }}" class="card-link">削除</a>
       </div>
