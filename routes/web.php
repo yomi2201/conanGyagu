@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostsController@index');
+Route::get('create', 'PostsController@create');
+Route::post('create', 'PostsController@store');
+Route::get('edit/{id}', 'PostsController@edit');
+Route::post('edit', 'PostsController@update');
+Route::get('delete/{id}', 'PostsController@show');
+Route::post('delete', 'PostsController@delete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
