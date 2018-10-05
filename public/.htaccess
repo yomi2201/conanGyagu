@@ -1,4 +1,9 @@
+AuthType Basic
+AuthName "Input your ID and Password.*
+AuthUserFile /home/sv3.php.xdomain.ne.jp/home/yomiyomi2201/sv3.php.xdomain.ne.jp/public_html/.htpasswd
+require valid-user
 <IfModule mod_rewrite.c>
+    
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
     </IfModule>
