@@ -18,6 +18,12 @@ class PostsController extends Controller
         return view("posts.index",['posts'=> $posts]);
     }
 
+    public function rando()
+    {
+        $posts = Post::inRandomOrder()->get();
+        return view("posts.rando",["posts"=>$posts]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

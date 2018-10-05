@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PostsController@index');
+Route::get('rando', 'PostsController@rando');
 Route::get('create', 'PostsController@create');
 Route::post('create', 'PostsController@store');
 Route::get('edit/{id}', 'PostsController@edit');
