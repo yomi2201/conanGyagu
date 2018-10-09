@@ -20,7 +20,7 @@ class PostsController extends Controller
 
     public function rando()
     {
-        $posts = Post::inRandomOrder()->get();
+        $posts = Post::inRandomOrder()->limit(1)->get();
         return view("posts.rando",["posts"=>$posts]);
     }
 
