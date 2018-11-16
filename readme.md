@@ -1,3 +1,23 @@
+コナンで少しでも元気を出すためにCRUDシステムの練習として作りました
+
+heroku config:set `
+APP_NAME=demo-laravel-crud `
+APP_KEY=$(php artisan key:generate --show) `
+DEBUGBAR_ENABLED=true `
+APP_URL=https://sutara79-laravel.herokuapp.com `
+SESSION_DRIVER=file `
+MAIL_DRIVER=smtp `
+MAIL_HOST=smtp.mail.yahoo.co.jp `
+MAIL_PORT=587 `
+MAIL_USERNAME=<brbr091429> `
+MAIL_PASSWORD=<pLFNmVVG> `
+MAIL_ENCRYPTION= `
+MAIL_FROM_ADDRESS=brbr091429@yahoo.co.jp `
+MAIL_FROM_NAME=demo-laravel-crud
+
+
+
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">

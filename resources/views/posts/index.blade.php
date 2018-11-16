@@ -10,6 +10,7 @@
     <h1>ギャグ一覧</h1>
     <p><a href="/create" class="btn btn-primary">新規追加</a></p>
     <p><a href="/rando" class="btn btn-primary">look</a></p>
+    <p><a href="/profile" class="btn btn-primary">img</a></p>
 
     @foreach ($posts as $post)
     <div class="card mb-2">

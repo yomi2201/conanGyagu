@@ -23,3 +23,6 @@ Route::post('delete', 'PostsController@delete');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/profile','ProfileController@index');
+Route::post('/profile','ProfileController@store');

@@ -42,12 +42,19 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        $post = new Post;
-        $post->title = $request->title;
-        $post->body = $request->body;
-        $post->save();
+        // $post = new Post;
+        // $post->title = $request['image']->getClientOriginalName();
+        // $request->file('image')->store('img');
+        $path = $request->file('image')->store('image_a');
+        echo $path;
+        // $path=$request->image->store('/public/image');
+        // var_dump($path);
+        // $post->title = $request->title;
+        // $post->body = $request->body;
+        // $post->save();
+        // echo 'test';
  
-        return view('posts.store');
+        // return view('posts.index');
     }
 
     /**
